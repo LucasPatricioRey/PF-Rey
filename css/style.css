@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header .contenedor {
+  width: 98%;
+  margin: auto;
+  display: table;
+}
+header h1 {
+  float: left;
+}
+
+#menu-bar {
+  display: none;
+}
+#menu-bar:checked ~ .menu {
+  transform: translateX(0%);
+}
+
+.imagen-menu {
+  width: 4rem;
+  padding-top: 0.24rem;
+}
+
+.imagen-menu {
+  width: 4rem;
+}
+
+.icon-menu {
+  width: 1rem;
+}
+
+.menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.9);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+.menu a {
+  display: block;
+  color: #fff;
+  height: 50px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+#Banner {
+  width: 100%;
+  margin-top: 5.6rem;
+  overflow: hidden;
+}
+#Banner ul {
+  display: flex;
+  width: 400%;
+  animation: cambio 20s infinite alternate linear;
+}
+#Banner li {
+  width: 100%;
+}
+#Banner img {
+  width: 100%;
+}
+#Banner h1 {
+  animation-delay: 4.3s;
+  animation: infinite;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
