@@ -1,5 +1,5 @@
 {
-  "name": "preentrega3-rey",
+  "name": "yes",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,8 +7,17 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "animate.css": "^4.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tackzord/prueba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tackzord/prueba/issues"
+  },
+  "homepage": "https://github.com/tackzord/prueba#readme",
+  "description": ""
 }

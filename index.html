@@ -10,33 +10,134 @@
     <!-- css propio -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
+<body id="pagina1">
+    <!-- Encabezado -->
     <header>
         <div class="contenedor">
-            <h1><img src="Img/logo.jpg" class="imagen-menu" alt="logo"></h1>
+            <h1><a href="index.html"><img src="Img/logo.jpg" class="imagen-menu" alt="logo"></a></h1>
             <input type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"><img src="Img/menu.png" class="icon-menu" alt="icono-menu"></label>
             <nav class="menu">
-                <a href="">Inicio</a>
-                <a href="">Cronograma</a>
-                <a href="">Videos</a>
-                <a href="">Contacto</a>
-                <a href="">Cuenta</a>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Pages/Cronograma.html">Cronograma</a></li>
+            <li><a href="Pages/videos.html">Videos</a></li>
+            <li><a href="Pages/Contacto.html">Contacto</a></li>
+            <li><a href="Pages/Cuenta.html">Cuenta</a></li>
             </nav>
         </div>
     </header>
-
+    <!-- imagenes en carrousel -->
     <main>
-        <div id="Banner">
+        <div id="carrousel">
             <ul>
-                <li class="animate__animated animate__fadeInLeftBig"><img src="Img/gym1.jpg" alt=""><h2 class="animate__animated animate__backInDown">hola mundo</h2></li>
-                <li><img src="Img/gym2.jpg" alt=""><h1 class="animate__animated animate__backInDown">hola mundo</h2></li>
+                <li><img src="Img/gym1.jpg" alt=""></li>
+                <li><img src="Img/gym2.jpg" alt=""></li>
                 <li><img src="Img/gym3.jpg" alt=""></li>
                 <li><img src="Img/gym4.jpg" alt=""></li>
             </ul>
         </div>
+        <!-- Banner de clases -->
+        <section id="banner">
+            <div>
+                <h3>CLASE DE PRUEBA</h3>
+                <p>Sin cargo, acercate a una sucursal e informate
+                    en que horario puedes venir a probar.</p>
+                    <li><a href="#">CONTACTAR</a></li>
+            </div>
+            <div>
+                <h3>PROMOCIONES</h3>
+                <p>Hasta 15% de descuento y cuotas congeladas
+                    en todas las actividades.</p>
+                    <li><a href="#">CONTACTAR</a></li>
+            </div>
+            <div>
+                <h3>1 MES SIN CARGO</h3>
+                <p>Obtené grandes beneficios en
+                    el precio de tu abono</p>
+                <li><a href="#">CONTACTAR</a></li>
+            </div>
+        </section>
+        <!-- Banner2 -->
+        <section id="banner2">
+            <h2>Parece imposible hasta que se hace</h2>
+            <p>Es difícil vencer a una persona que nunca se rinde.</p>
+            <div class="banner_hijo">
+                <div>
+                    <img src="img/boxing.png" alt="boxing">
+                    <h3>Boxeo</h3>
+                    <p>El mejor entrenamiento aeróbico en un salón totalmente equipado. Mejora la oxigenación, quema calorías y sentite más confiado.</p>
+                </div>
+                <div>
+                    <img src="img/pesa.png" alt="pesa">
+                    <h3>Musculacion</h3>
+                    <p>Salón totalmente equipado y completamente renovado con maquinaria moderna e instructores disponibles en todo horario.</p>
+                </div>
+                <div>
+                    <img src="img/gimnasio.png" alt="gimnasio">
+                    <h3>Crossfit</h3>
+                    <p>Box súper equipado con profesionales a cargo en todos los horarios. Entrenamiento para todos los niveles. Ponete fuerte y saludable.</p>
+                </div>
+            </div>         
+        </section>
+        <section id="precio">
+            <div class="precio_hijo">
+                <div>
+                    <h2>Boxeo</h2>
+                    <span>Recreativo</span>
+                    <p>$4.000</p>
+                    <ul>
+                        <li>Por mes</li>
+                        <li>Pase libre</li>
+                        <li>Incluye musculacion</li>
+                        <li>Lunes a viernes</li>
+                        <li>13hs. a 21hs.</li>
+                        <li><a href="pages/Contactanos.html">Consultar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Gym</h2>
+                    <span> Musculacion</span>
+                    <p>$2.000</p>
+                    <ul>
+                        <li>Por mes</li>
+                        <li>Pase</li>
+                        <li>Paquete promocional</li>
+                        <li>Lunes a sabados</li>
+                        <li>8hs. a 22hs.</li>
+                        <li><a href="pages/Contactanos.html">Consultar</a></li>
+                </div>
+                <div>
+                    <h2>Crossfit</h2>
+                    <span> Clases</span>
+                    <p>$2.300</p>
+                    <ul>
+                        <li>Por mes</li>
+                        <li>Pase libre</li>
+                        <li>Sala musculacion</li>
+                        <li>Lunes a viernes</li>
+                        <li>13hs. a 21hs.</li>
+                        <li><a  href="pages/Contactanos.html">Consultar</a></li>
+                </div>
+            </div>    
+        </section>
     </main>
+    <footer>
+        <div class="social-icons-container">
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Cookies</li>
+            <li class="menu-item">Privacy</li>
+            <li class="menu-item">shipping</li>
+            <li class="menu-item">Refounds</li>
+        </ul>
+        <span class="copyright">&copy;2021, Lucas Rey. Todos los derechos reservados.</span>
+    </footer>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
