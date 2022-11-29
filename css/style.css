@@ -120,6 +120,7 @@ header label {
 #carrousel {
   width: 100%;
   margin-top: 5.6rem;
+  overflow: hidden;
 }
 #carrousel ul {
   display: flex;
