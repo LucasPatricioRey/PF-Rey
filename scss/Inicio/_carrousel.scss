@@ -1,7 +1,7 @@
 #carrousel {
     width: 100%;
     margin-top: 5.6rem;
-    overflow: hidden;
+    
     ul {
         display: flex;
         width: 400%;
@@ -29,3 +29,4 @@
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
+

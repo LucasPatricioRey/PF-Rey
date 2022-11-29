@@ -1,4 +1,5 @@
 footer {
+    margin-top: auto;
     width: 100%;
     padding: 2rem 8%;
     background-color: #0e0e0e;
@@ -39,19 +40,6 @@ footer {
         background-image: url("../Img/TwitterBlanco.png");
     }
     
-    .footer-menu-container{
-        list-style-type: none;
-        color: #f2f2f2;
-        font-size: 18px;
-    }
-    .menu-item{
-        margin: 1rem 1.5rem;
-        cursor: pointer;
-        opacity: 0.6;
-        &:hover {
-            opacity: 1;
-        }
-    }
     .copyright{
         color: #f2f2f2;
         opacity: 0.3;
