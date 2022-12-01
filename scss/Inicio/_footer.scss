@@ -1,16 +1,15 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 footer {
     margin-top: auto;
     width: 100%;
     padding: 2rem 8%;
-    background-color: #0e0e0e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $color-sexto;
+    @include flexCentrado;
     flex-direction: column;
     .social-icons-container, .footer-menu-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCentrado;
         flex-wrap: wrap;
         margin-bottom: 1rem;
     }
@@ -18,14 +17,14 @@ footer {
         height: 50px;
         width: 50px;
         border-radius: 50px;
-        border: 1px solid #f2f2f2;
+        border: 1px solid $color-dos;
         background-image: url("../Img/FacebookBlanco.png");
         background-position: center;
         background-size: 40%;
         background-repeat: no-repeat;
         margin: 1rem;
         &:hover {
-            background-color: #121212;
+            background-color: $color-quinto;
             filter: invert(1);
         }
     }
@@ -41,7 +40,7 @@ footer {
     }
     
     .copyright{
-        color: #f2f2f2;
+        color: $color-dos;
         opacity: 0.3;
         text-align: center;
     }    

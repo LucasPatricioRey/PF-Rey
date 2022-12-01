@@ -1,0 +1,31 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.cronograma {
+    @include flexCentrado;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: $color-gris;
+    color: $color-quinto;
+    h3{
+        margin-top: 8rem;
+        font-size: 4rem;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media(max-width: 317px){
+    .cronograma {
+        img{
+            width: 230px;
+            height: 230px;
+        }
+    }
+}
+

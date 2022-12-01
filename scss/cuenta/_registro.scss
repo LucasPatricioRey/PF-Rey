@@ -1,38 +1,38 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 #pag-cuenta {
-    background: #181818;
+    background: $color-cuatro;
 }
 .login-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
+    max-width: 1170px;
+    margin: 10rem auto auto auto;
     width: 400px;
     padding: 40px;
-    transform: translate(-50%, -50%);
-    background: #242026;
+    background: $color-quinto;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
     border-radius: 10px;
     h2 {
         margin: 0 0 36px;
         padding: 0;
-        color: #fff;
+        color: $color-dos;
         text-align: center;
     }
     .user-box {
         input {
-            position: relative;
             width: 100%;
             padding: 10px 0;
             font-size: 16px;
-            color: #fff;
+            color: $color-dos;
             margin-bottom: 30px;
             border: none;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid $color-dos;
             outline: none;
             background: transparent;
             &:focus+label, &:valid+label {
                 top: -85px;
                 left: 0;
-                color: #FF6C00;
+                color: $color-uno;
                 font-size: 12px;
             }
         }
@@ -42,7 +42,7 @@
             top: -60px;
             padding: 10px 0;
             font-size: 16px;
-            color: #fff;
+            color: $color-dos;
             pointer-events: none;
             transition: .5s;
             
@@ -61,13 +61,13 @@
         overflow: hidden;
         transition: .5s;
         letter-spacing: 4px;
-        border: 1px solid #FF6C00;
+        border: 1px solid $color-uno;
         margin: auto;
         &:hover {
-            background: #FF6C00;
-            color: #fff;
+            background: $color-uno;
+            color: $color-dos;
             border-radius: 5px;
-            box-shadow: 0 0 5px #FF6C00, 0 0 25px #FF6C00, 0 0 50px #FF6C00, 0 0 100px #FF6C00;
+            box-shadow: 0 0 5px $color-uno, 0 0 25px $color-uno, 0 0 50px $color-uno, 0 0 100px $color-uno;
         }
     }
     #register{
@@ -79,7 +79,7 @@
         text-align: center;
         a {
             margin: auto;
-            color: #FF6C00;
+            color: $color-uno;
         }
     }
 }
@@ -88,14 +88,14 @@
     
 }
 }
-@media (max-width:627px){
+@media (max-width:500px){
     .login-box {
-        top: 50%;
-        width: 350px;
+        width: 240px;
         padding: 30px;
-    }
-    .separador_cuenta{
-        display: block;
-        height: 700px;
+        margin-bottom: 10rem;
+        .button-form{
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 }

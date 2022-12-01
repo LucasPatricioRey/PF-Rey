@@ -1,3 +1,6 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 #menu-bar {
     display: none;
     &:checked ~ .menu {
@@ -8,14 +11,10 @@
     width: 4rem;
     padding-top: 0.24rem;
 }
-.imagen-menu {
-    width: 4rem;
-}
 .icon-menu {
     width: 2.5rem;
     margin-top: 0.7rem;
     margin-right: 1.7rem;
-    
 }
 .menu {
     position: absolute;
@@ -28,7 +27,7 @@
     transform: translateX(-100%);
     a {
         display: block;
-        color: #fff;
+        color: $color-dos;
         height: 50px;
         padding: 15px;
         border-bottom: 1px solid rgba(255,255,255,0.3);

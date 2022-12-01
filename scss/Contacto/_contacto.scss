@@ -1,5 +1,8 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 #pag-contacto {
-    background: #181818;
+    background: $color-cuatro;
     line-height: 1.6;
     
 }
@@ -9,12 +12,12 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
-    color: #fff;
+    color: $color-dos;
     .logo {
         text-align: center;
         font-size: 3em;
         span {
-            color: #FF6C00;
+            color: $color-uno;
         }
     }
     .contact {
@@ -24,7 +27,7 @@
         }
     
         .contact-form {
-            background: #222222;
+            background: $color-quinto;
             form {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -44,24 +47,24 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #fff;
-                    border-bottom: 1px solid #FF6C00;
+                    color: $color-dos;
+                    border-bottom: 1px solid $color-uno;
                 }
                 button {
-                    background: #FF6C00;
+                    background: $color-uno;
                     border: 0;
                     text-transform: uppercase;
                     padding: 1em;
                     &:hover, &:focus {
                     background: #fab380;
-                    color: #fff;
+                    color: $color-dos;
                     outline: 0;
                     }
                 }
             }
         }
         .contact-info {
-            background: #000;
+            background: $color-black;
             h4, ul, p {
             text-align: center;
             margin: 0 0 1rem 0;
@@ -74,7 +77,6 @@
 }
 
 
-/* LARGE SIZE */
 @media(min-width: 700px) {
     .contact {
         display: grid;

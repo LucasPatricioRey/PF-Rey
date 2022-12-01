@@ -9,28 +9,35 @@ h2:nth-child(1){
     margin-top: 5.5rem;
 }
 h2 {
-    background-color: #FF6C00;
-    width: 100%;
-    height: 8rem;
+    background-color: $color-uno;
+    height: auto;
     font-size: 5rem;
-    color: white;
+    color: $color-dos;
     font-weight: bold;
     padding: 1rem;
 }
 }
-@media screen and (max-width: 1024px){
-.separador_videos {height: 26rem;}
+
+@media screen and (max-width: 582px){
+    .videos{
+        h2 {
+        font-size: 3rem;
+        }
+        iframe {
+            height: 270px;
+            width: 300px;
+        }
+    }
 }
-@media screen and (max-width: 500px){
-.separador_videos {
-    height: 33.5rem;
-}
-.videos h2 {
-    font-size: 3rem;
-padding-top: 3rem;
-}
-.videos iframe {
-    height: 170px;
-width: 300px;
-}
+
+@media screen and (max-width: 412px){
+    .videos{
+        h2 {
+        font-size: 2rem;
+        }
+        iframe {
+            height: 270px;
+            width: 150px;
+        }
+    }
 }

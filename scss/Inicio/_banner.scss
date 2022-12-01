@@ -1,19 +1,21 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 #banner {
     display: flex;
-    color: white;
+    color: $color-dos;
     font-size: 1.6rem;
     height: 400px;
     margin-top: -1rem;
 
     div:nth-child(2) {
-        background-color:#333;
+        background-color:$color-tres;
         
     }
     div:nth-child(1), div:nth-child(3) {
-        background-color: black;
+        background-color: color-black;
     }
     div {
-        align-items: center;
         text-align: center;
         width: 100%;
         h3 {
@@ -24,8 +26,8 @@
             margin: 2rem;
         }
         a {
-            color: white;
-            background-color: #FF6C00;
+            color: $color-dos;
+            background-color: $color-uno;
             border-radius: 20px;
             padding: 0.5rem 1rem;
             font-size: 1.2rem;

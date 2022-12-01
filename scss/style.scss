@@ -1,4 +1,7 @@
-@import "globales";
+@import "../scss/utilities/mixins";
+@import "../scss/utilities/variables";
+@import "../scss/utilities/globales";
+
 @import "../scss/Inicio/header";
 @import "../scss/Inicio/menu";
 @import "../scss/Inicio/carrousel";
@@ -7,10 +10,13 @@
 @import "../scss/Inicio/precios";
 @import "../scss/Inicio/footer";
 
-@import "../scss/cuenta/registro";
+@import "../scss/cronograma/cronograma";
+
+@import "../scss/videos/videos";
 
 @import "../scss/Contacto/contacto";
 
-@import "../scss/videos/videos";
+@import "../scss/cuenta/registro";
+
 
 
