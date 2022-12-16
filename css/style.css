@@ -397,6 +397,10 @@ footer .copyright {
   text-align: center;
 }
 
+#cronograma {
+  background-color: #cecece;
+}
+
 .cronograma {
   display: flex;
   align-items: center;
@@ -405,23 +409,27 @@ footer .copyright {
   gap: 1.5rem;
   font-weight: bold;
   text-align: center;
-  background-color: #cecece;
   color: #222222;
 }
 .cronograma h3 {
   margin-top: 8rem;
-  font-size: 4rem;
+  font-size: 3rem;
 }
-.cronograma img {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 4rem;
+.cronograma h4 {
+  font-size: 2rem;
+}
+.cronograma p {
+  margin: 0 16rem 0 16rem;
+  padding-bottom: 2rem;
+  border-bottom: 7px solid #FF6C00;
+}
+.cronograma .pfinal {
+  margin-bottom: 3rem;
 }
 
-@media (max-width: 317px) {
-  .cronograma img {
-    width: 230px;
-    height: 230px;
+@media (max-width: 760px) {
+  .cronograma p {
+    margin: 0 3rem 0 3rem;
   }
 }
 #pag-video {
